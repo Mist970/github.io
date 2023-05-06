@@ -12,5 +12,5 @@ menu:
             icon: user
 ---
 This website will be used to demonstrate any future projects I venture into, as well as anything I find useful throughout my CyberSecurity journey. 
-You can contact me on [LinkedIn] (https://www.linkedin.com/in/haroon-akram/)for any enquiries.
+You can contact me on [LinkedIn](https://www.linkedin.com/in/haroon-akram/)for any enquiries.
 
