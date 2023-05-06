@@ -204,7 +204,7 @@ menu:
               icon: brand-github
 
         - identifier: linkedin
-          name: Twitter
+          name: LinkedIn
           url: https://www.linkedin.com/in/haroon-akram/
           params:
               icon: brand-twitter
