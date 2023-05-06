@@ -204,10 +204,10 @@ menu:
               icon: brand-github
 
         - identifier: linkedin
-          name: LinkedIn
-          url: https://www.linkedin.com/in/haroon-akram/
+          name: Twitter
+          url: https://twitter.com
           params:
-              icon: brand-linkedin
+              icon: brand-twitter
 
 related:
     includeNewer: true
