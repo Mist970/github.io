@@ -1,10 +1,13 @@
 ---
 title: About
-description: My name is Haroon Akram, I am in my final year at Birmingham City University studying CyberSecurity. 
+description: My Name is Haroon Akram, I am in my final year at Birmingham City University Studying CyberSecurity. 
+date: '2019-02-28'
 aliases:
   - about-us
-  - about
+  - about-hugo
   - contact
+license: CC BY-NC-ND
+lastmod: '2020-10-09'
 menu:
     main: 
         weight: -90
@@ -13,4 +16,6 @@ menu:
 ---
 This website will be used to demonstrate any future projects I venture into, as well as anything I find useful throughout my CyberSecurity journey. 
 You can contact me on [LinkedIn](https://www.linkedin.com/in/haroon-akram/) for any enquiries.
+---
+
 
