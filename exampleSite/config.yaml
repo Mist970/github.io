@@ -57,7 +57,7 @@ params:
 
     sidebar:
         emoji: 🍥
-        subtitle: Welcome to my portfolio, ahve a look around & contact me if you like what you see :)
+        subtitle: Welcome to my portfolio, have a look around & contact me if you like what you see :)
         avatar:
             enabled: true
             local: true
