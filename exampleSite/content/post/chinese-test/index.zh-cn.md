@@ -1,5 +1,5 @@
 ---
-title: My Test ategory
+title: My Test Category
 description: Test Category
 date: 2020-09-09
 slug: Test
