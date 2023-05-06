@@ -1,6 +1,6 @@
 ---
 title: About
-description: My Name is Haroon Akram, I am in my final year at Birmingham City University Studying CyberSecurity. 
+description: My name is Haroon Akram, I am in my final year at Birmingham City University studying CyberSecurity. 
 aliases:
   - about-us
   - about
