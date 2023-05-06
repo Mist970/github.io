@@ -1,3 +1,4 @@
+@@ -1,240 +1,240 @@
 baseurl: https://www.haroonakram.co.uk/
 languageCode: en-us
 theme: hugo-theme-stack
@@ -10,20 +11,20 @@ languages:
         title: Haroon Akram
         description: Example description
         weight: 1
-    zh-cn:
-        languageName: 中文
-        title: 演示站点
-        description: 演示说明
-        weight: 2
-    ar:
-        languageName: عربي
-        languagedirection: rtl
-        title: موقع تجريبي
-        description: وصف تجريبي
-        weight: 3
+   # zh-cn:
+     #   languageName: 中文
+     #   title: 演示站点
+     #   description: 演示说明
+     #   weight: 2
+   # ar:
+       # languageName: عربي
+       # languagedirection: rtl
+       # title: موقع تجريبي
+       # description: وصف تجريبي
+       # weight: 3
 
 # Change it to your Disqus shortname before using
-disqusShortname: hugo-theme-stack
+#disqusShortname: hugo-theme-stack
 
 # GA Tracking ID
 googleAnalytics:
@@ -70,17 +71,20 @@ params:
         license:
             enabled: true
             default: Licensed under CC BY-NC-SA 4.0
+        #license:
+            #enabled: true
+            #default: Licensed under CC BY-NC-SA 4.0
 
-   comments:
+    comments:
         enabled: true
         provider: disqus
 
-        disqusjs:
-            shortname:
-            apiUrl:
-            apiKey:
-            admin:
-            adminLabel:
+        #disqusjs:
+            #shortname:
+            #apiUrl:
+            #apiKey:
+            #admin:
+            #adminLabel:
 
         utterances:
             repo:
