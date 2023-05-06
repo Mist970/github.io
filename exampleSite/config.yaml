@@ -207,7 +207,7 @@ menu:
           name: LinkedIn
           url: https://www.linkedin.com/in/haroon-akram/
           params:
-              icon: brand-twitter
+              icon: brand-linkedin
 
 related:
     includeNewer: true
