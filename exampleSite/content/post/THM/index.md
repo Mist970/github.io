@@ -6,5 +6,6 @@ slug: TryHackMe
 image: helena-hertz-wWZzXlDpMog-unsplash.jpg
 categories:
     - TryHackMe
+image = "TryHackMe.png"
 ---
 #Pentesting:
