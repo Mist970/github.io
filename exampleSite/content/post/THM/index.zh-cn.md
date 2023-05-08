@@ -7,5 +7,4 @@ image: helena-hertz-wWZzXlDpMog-unsplash.jpg
 categories:
     - TryHackMe
 ---
-<script src="https://tryhackme.com/badge/1322959"></script>
 #Pentesting:
