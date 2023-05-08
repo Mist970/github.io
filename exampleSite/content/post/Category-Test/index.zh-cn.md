@@ -5,7 +5,7 @@ date: 2020-09-09
 slug: Test
 image: helena-hertz-wWZzXlDpMog-unsplash.jpg
 categories:
-    - Test
+    - Test 2
 ---
 
 I don't know.
