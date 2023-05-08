@@ -1,4 +1,4 @@
----
++++
 title: TryHackMe
 description: In here, I cover my TryHackMe journey.
 date: 2023-05-08
@@ -7,5 +7,5 @@ image: helena-hertz-wWZzXlDpMog-unsplash.jpg
 categories:
     - TryHackMe
 image = "TryHackMe.png"
----
++++
 #Pentesting:
