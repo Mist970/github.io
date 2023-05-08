@@ -208,12 +208,13 @@ menu:
           url: https://www.linkedin.com/in/haroon-akram/
           params:
               icon: brand-linkedin
-        
+              
         - identifier: TryHackMe
-        name: TryHackMe
-        url: https://tryhackme.com/p/Mist97
-        params:
-            icon: THM
+          name: TryHackMe
+          url: https://tryhackme.com/p/Mist97
+          params:
+              icon: THM
+       
 
 related:
     includeNewer: true
