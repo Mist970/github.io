@@ -1,7 +1,5 @@
 ---
 title: Links
-what happens if i type under here
-links:
   - title: TryHackMe
     description: Take a look at my TryHackMe profile ! 
     website:  https://tryhackme.com/p/Mist97
