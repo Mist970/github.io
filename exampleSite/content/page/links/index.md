@@ -1,5 +1,6 @@
 ---
 title: Links
+links:
   - title: TryHackMe
     description: Take a look at my TryHackMe profile ! 
     website:  https://tryhackme.com/p/Mist97
