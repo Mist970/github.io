@@ -6,10 +6,8 @@ slug: TryHackMe
 image: TryHackMe.png
 categories:
     - TryHackMe
-
-image: https://tryhackme-badges.s3.amazonaws.com/Mist97.png
 ---
-
+ 
 # Pentesting:
 This is a test to se if the table of Contents will show
 
