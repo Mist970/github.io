@@ -7,6 +7,7 @@ image: TryHackMe.png
 categories:
     - TryHackMe
 ---
+ <img src="https://tryhackme-badges.s3.amazonaws.com/Mist97.png" alt="TryHackMe">
 # Pentesting:
 This is a test to se if the table of Contents will show
 
