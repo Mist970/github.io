@@ -1,6 +1,10 @@
 ---
 title: Links
 links:
+  - title: TryHackMe
+    description: Take a look at my TryHackMe profile ! 
+    website:  https://tryhackme.com/p/Mist97
+    image: https://assets.tryhackme.com/img/logo/tryhackme_logo_full.svg
   - title: LinkedIn
     description: Have a look at my LinkedIn page to stay updated :)
     website: https://www.linkedin.com/in/haroon-akram/
