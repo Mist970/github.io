@@ -57,7 +57,7 @@ params:
 
     sidebar:
         emoji: 🎓
-        subtitle: Welcome to my portfolio, have a look around & contact me if you like what you see :)
+        subtitle: Welcome to my portfolio, have a look around & if you like what you see, contact me :)
         avatar:
             enabled: true
             local: true
@@ -208,7 +208,7 @@ menu:
           url: https://www.linkedin.com/in/haroon-akram/
           params:
               icon: brand-linkedin
-              
+
         - identifier: TryHackMe
           name: TryHackMe
           url: https://tryhackme.com/p/Mist97
