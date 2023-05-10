@@ -1,3 +1,4 @@
+<link type="image/png" sizes="16x16" rel="icon" href="assets/icons/icons8-fingerprint-16.png">
 {{ define "main" }}
     {{ $pages := where .Site.RegularPages "Type" "in" .Site.Params.mainSections }}
     {{ $notHidden := where .Site.RegularPages "Params.hidden" "!=" true }}
