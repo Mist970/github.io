@@ -1,6 +1,6 @@
 ---
 title: TryHackMe
-description: Notes from things i learned from TryHackMe 
+description: TryHackMe notes. 
 date: 2023-05-08
 slug: TryHackMe
 image: TryHackMe.png
