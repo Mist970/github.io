@@ -2,8 +2,8 @@
 title: About
 description: My Name is Haroon Akram, I am a recent graduate in the field of Cyber Security. 
 aliases:
-  - about-us
-  - about-hugo
+  - about-me
+  - about
   - contact
 menu:
     main: 
