@@ -1,6 +1,6 @@
 ---
 title: TryHackMe
-description: Check out my TryHackMe Journey!
+description: Notes from things i learned from TryHackMe 
 date: 2023-05-08
 slug: TryHackMe
 image: TryHackMe.png
@@ -12,8 +12,6 @@ categories:
 This is a test to se if the table of Contents will show
 
 ## Another heading to find out:
-
-
 this is, yet again, another heading to see
 
 
