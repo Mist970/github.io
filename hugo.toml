@@ -1,0 +1,4 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = "Haroon's Den"
+theme = 'hugo-ficurinia-2'
