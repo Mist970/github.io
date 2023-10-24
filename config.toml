@@ -1,0 +1,71 @@
+baseURL = "https://example.com/"
+theme = "hugo-ficurinia"
+title = "My nice blog"
+languageCode = "en"
+defaultContentLanguage = "en"
+theme = "hugo-ficurinia"
+
+author = "Gabriele Musco"
+copyright = "Some copyright notice - [my license](https://example.com/license)"
+
+paginate = 5
+summaryLength = 30 #number of words for article summaries
+
+[params]
+    description = "Authorss blog about stuff"
+    author = "Author Name"
+    logo = "/logo.svg"
+    favicon = "/favicon.png"
+    faviconIco = "/favicon.ico"
+    appletouch = "/apple-touch-icon.png"
+    svgicon = "/logo.svg"
+    icon512 = "/android-chrome-512x512.png"
+    
+    
+    imageInArticlePreview = true
+
+    enableShareOnFediverse = true
+
+    enableRelatedArticles = true
+    relatedArticlesNum = 2 
+    forceRedirect = true
+
+[markup]
+    [markup.highlight]
+        codeFences = true
+        guessSyntax = true
+        lineNos = false
+        lineNumbersInTable = false
+        tabWidth = 4
+        style = "dracula"
+    [markup.tableOfContents]
+        endLevel = 5
+        ordered = false
+        startLevel = 1
+
+[menu]
+    [[menu.main]]
+        identifier = "archguide"
+        name = "Arch guide"
+        url = "/archguide"
+        weight = 99
+    [[menu.icons]]
+        identifier = "gitlab"
+        name = "GitLab"
+        url = "https://gitlab.com/gabmus"
+        weight = 10
+    [[menu.icons]]
+        identifier = "gnome"
+        name = "GNOME GitLab"
+        url = "https://gitlab.gnome.org/gabmus"
+        weight = 20
+    [[menu.icons]]
+        identifier = "youtube"
+        name = "YouTube"
+        url = "https://youtube.com/TechPillsNet"
+        weight = 30
+    [[menu.icons]]
+        identifier = "mastodon"
+        name = "Mastodon"
+        url = "https://fosstodon.org/@gabmus"
+        weight = 40
