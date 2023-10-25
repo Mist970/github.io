@@ -23,10 +23,7 @@ But it&amp;rsquo;s got a big problem: it&amp;rsquo;s a bit of a hassle, and you 
       <pubDate>Mon, 24 Aug 2020 09:19:02 +0200</pubDate>
       
       <guid>https://www.haroonakram.co.uk/posts/back-to-hugo/</guid>
-      <description>As you can see, this website is kinda different. I remade it, just because why not.
-I was previously using Hexo with a nice theme called cactus (properly altered to match my preference), but at some point I got tired of that as well.
-I wanted to create something simple and straight forward. This is the kind of website without too many bells and whistles. Just a blog, period.
-The initial idea of static site generators kinda goes well with this concept, but I don&amp;rsquo;t exactly know when or how things changed.</description>
+      <description>This s my first Website, I am trying to show you how it would look like.</description>
     </item>
     
     <item>
@@ -35,9 +32,7 @@ The initial idea of static site generators kinda goes well with this concept, bu
       <pubDate>Sun, 11 Aug 2019 10:38:00 +0000</pubDate>
       
       <guid>https://www.haroonakram.co.uk/posts/hello-world/</guid>
-      <description>My new web home Hey people. I finally got around at creating a static blog.
-After using Hugo for a while, and initially deciding to try out Pelican, just to realize it&amp;rsquo;s in a sad, outdated state right now, I settled on Hexo.
-It&amp;rsquo;s not like I&amp;rsquo;m crazy for JavaScript, quite the contrary. But I do realize it has its place sometimes. Using npm to install plugins is pretty clever, and besides at the end of the day I am the only one that has to use it.</description>
+      <description>My Cyber Journey </description>
     </item>
     
   </channel>

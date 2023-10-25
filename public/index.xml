@@ -55,17 +55,7 @@
       <pubDate>Mon, 24 Aug 2020 09:19:02 +0200</pubDate>
       
       <guid>https://www.haroonakram.co.uk/posts/back-to-hugo/</guid>
-      <description><![CDATA[<p>As you can see, this website is kinda different. I remade it, just because why not.</p>
-<p>I was previously using Hexo with a nice theme called cactus (properly altered to match my preference), but at some point I got tired of that as well.</p>
-<p>I wanted to create something simple and straight forward. This is the kind of website without too many bells and whistles. Just a blog, period.</p>
-<p>The initial idea of static site generators kinda goes well with this concept, but I don&rsquo;t exactly know when or how things changed. Maybe people liked these tools so much they tried to make them more general purpose, or they just wanted to use them for different things. Doesn&rsquo;t matter, point is that these generators, once simple and easy ways to make a decent blog without the burden and subsequent psychological trauma of a LAMP stack, are now bloated and messy.</p>
-<p>Well, to be fair it&rsquo;s not really an issue with the generators themselves, but with the themes. It&rsquo;s the theme that has the responsibility for how the content is meant to be laid out, what is allowed and how you should do things. Honestly calling them themes is an understatement. If the generator is the skeleton, the <em>theme</em> is muscles, flesh and nervous system. The so called generator is useless without one.</p>
-<p>Making themes is one of those things that I don&rsquo;t like to do. I didn&rsquo;t like it when I was a kid playing around with Wordpress and Joomla, and I don&rsquo;t like it now. I&rsquo;d rather make a plain website instead. But that&rsquo;s not feasible for a blog because of pagination, tags, RSS feed and whatever else that doesn&rsquo;t come to mind right now.</p>
-<p>But at some point I just said, well F it, let&rsquo;s do it. It&rsquo;s a thing I&rsquo;ll do once and basically forget it, and the gain I get from it is a website I actually like and that I can easily customize and change around whenever I feel like it.</p>
-<p>I decided to use Hugo since it seems to be the most popular static site generator at this point in time. I&rsquo;m not new to it, and I somewhat knew my way around it (or so I thought) since I already modified another theme for <a href="https://techpills.technology">the latest iteration of the Tech Pills website</a>. After watching some YouTube tutorials and digging through <a href="https://gohugo.io/documentation/">the lackluster documentation</a> what came out was a new theme I decided to call <a href="https://gitlab.com/gabmus/hugo-ficurinia">Ficurinia</a>.</p>
-<p>The name choice was pretty easy. This theme is inspired by the theme I was using before with Hexo called cactus. This being sort of a grittier version of cactus (if not a more personal vision on the same idea) I decided to call it after the Sicilian word for Indian fig aka prickly pear, <em>Ficurinia</em>.</p>
-<p>I&rsquo;m happy to have made this theme. It&rsquo;s simple, no weird layouts or messy animations, no javascript, and it works on mobile without any modification or special rules. Heck it even looks pretty damn good in the links command line browser.</p>
-<p>So this is my new home now. Hope you like it.</p>
+      <description><![CDATA[<p>This s my first Website, I am trying to show you how it would look like.</p>
 ]]></description>
       
     </item>
@@ -78,19 +68,7 @@
       <pubDate>Sun, 11 Aug 2019 10:38:00 +0000</pubDate>
       
       <guid>https://www.haroonakram.co.uk/posts/hello-world/</guid>
-      <description><![CDATA[<h2 id="my-new-web-home">My new web home</h2>
-<p>Hey people. I finally got around at creating a static blog.</p>
-<p>After using <a href="https://gohugo.io/">Hugo</a> for a while, and initially deciding to try out <a href="https://blog.getpelican.com/">Pelican</a>, just to realize it&rsquo;s in a sad, outdated state right now, I settled on <a href="https://hexo.io">Hexo</a>.</p>
-<p>It&rsquo;s not like I&rsquo;m crazy for JavaScript, quite the contrary. But I do realize it has its place sometimes. Using <code>npm</code> to install plugins is pretty clever, and besides at the end of the day I am the only one that has to use it.</p>
-<p>It has a more complex structure compared to the aforementioned solutions, but if it gets the job done I can&rsquo;t complain too much.</p>
-<h2 id="recap">Recap</h2>
-<p>This is an interesting point in my life. In July I got my bachelor&rsquo;s in Computer Science, it was a pretty great achievement, and soon I&rsquo;ll be heading to Milan to get a master degree.</p>
-<p>About my projects, things are going very well. I am focusing a lot on GTK/GNOME apps, probably because I&rsquo;m making things I want to use in the first place.</p>
-<p><a href="https://gabmus.gitlab.io/HydraPaper">HydraPaper</a> got a pretty substantial update, introducing <a href="https://source.puri.sm/Librem5/libhandy">libhandy</a> into the mix to spice up its looks somehow, and mostly to make use of some comodity widgets it offers, namely the awesome <code>HdyPreferencesWindow</code>.</p>
-<p>For the thesis of my bachelor&rsquo;s, I presented another interesting app called <a href="https://gitlab.com/GabMus/unifydmin">Unifydmin</a>. It&rsquo;s a control center and administration panel for servers. It&rsquo;s a very interesting project, but it&rsquo;s still quite rough around the edges. I have to find the motivation to pick it up again, but right now I&rsquo;m focused on another project.</p>
-<p>And this project is <a href="https://gabmus.gitlab.io/gnome-feeds">Feeds</a>, a feed reader. It may sound dumb, but I couldn&rsquo;t find a single feed reader app for linux that I liked. Everything is either old, slow or electron based. After some time complaining about this (my girlfriend and friends can tell you about it), and basically using reddit and the podcasts I follow to get the latest news, I said F it, and made my own thing. It&rsquo;s going pretty well and the people that tried it seem to like it, and that makes me actually very proud of it.</p>
-<p>And I think that&rsquo;s about it for now. I hope I manage to get my S together and start blogging more frequently, because I quite enjoy being able to share dev stuff online.</p>
-<p>Let&rsquo;s see where that goes.</p>
+      <description><![CDATA[<h2 id="my-cyber-journey">My Cyber Journey</h2>
 ]]></description>
       
     </item>
