@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>editor on Haroon&#39;s Den</title>
+    <link>https://www.haroonakram.co.uk/tags/editor/</link>
+    <description>Recent content in editor on Haroon&#39;s Den</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 06 Dec 2022 07:36:27 +0100</lastBuildDate><atom:link href="https://www.haroonakram.co.uk/tags/editor/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nvpunk: A Modern Neovim Distribution with Batteries Included</title>
+      <link>https://www.haroonakram.co.uk/posts/nvpunk_a_modern_neovim_distribution_with_batteries_included/</link>
+      <pubDate>Tue, 06 Dec 2022 07:36:27 +0100</pubDate>
+      
+      <guid>https://www.haroonakram.co.uk/posts/nvpunk_a_modern_neovim_distribution_with_batteries_included/</guid>
+      <description>I&amp;rsquo;ve been using neovim for a while now, and for me, it&amp;rsquo;s the single best text editor out there.
+But it&amp;rsquo;s got a big problem: it&amp;rsquo;s a bit of a hassle, and you have to know what you&amp;rsquo;re doing. There&amp;rsquo;s a wide ecosystem of plugins that integrate into each other, most of them requiring custom configuration code to work. It took a while, but I managed to put together a pretty good config.</description>
+    </item>
+    
+  </channel>
+</rss>
