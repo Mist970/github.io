@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><?xml-stylesheet href="/feed_style.xsl" type="text/xsl"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="https://www.rssboard.org/media-rss">
+  <channel>
+    <title>Haroon&#39;s Den</title>
+    <link>https://www.haroonakram.co.uk/</link>
+    <description>Recent content on Haroon&#39;s Den</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language><atom:link href="https://www.haroonakram.co.uk/index.xml" rel="self" type="application/rss+xml" /><icon>https://www.haroonakram.co.uk/img/icon.svg</icon>
+    
+    
+    
+    
+    
+  </channel>
+</rss>
