@@ -1,6 +1,0 @@
-{{ $file := (.Get "file" | readFile) }}
-{{ if "trim" }}
-{{ print (trim $file (.Get "trim")) | safeHTML }}
-{{ else }}
-{{ print $file | safeHTML }}
-{{ end }}
