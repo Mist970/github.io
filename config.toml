@@ -1,6 +1,6 @@
-baseURL = "https://gabmus.org/"
+baseURL = "/"
 languageCode = "en-us"
-title = "GabMus's Dev Log"
+title = "Haroon's Den"
 
 theme = "hugo-ficurinia"
 
@@ -11,22 +11,19 @@ paginate = 5
 summaryLength = 30
 
 [params]
-    description = "Gabriele Musco's blog about programming and other cool stuff"
-    author = "Gabriele Musco"
+    description = "My Cyber Security (& Whatever i find interesting) blog"
+    author = "Haroon Akram"
     logo = "/logo.svg"
     favicon = "/favicon.png"
     faviconIco = "/favicon.ico"
     appletouch = "/apple-touch-icon.png"
     svgicon = "/logo.svg"
     icon512 = "/android-chrome-512x512.png"
-    # commento = "https://cloud.techpills.technology:54321/js/commento.js"
-    cactusCommentsSiteName = "gabmus.org"
-    cactusCommentsServerName = "cactus.chat"
-    cactusCommentsHomeserver = "https://matrix.cactus.chat:8448"
     
+    showRss = false
     imageInArticlePreview = true
 
-    enableShareOnFediverse = true
+    enableShareOnFediverse = false
 
     enableRelatedArticles = true
     relatedArticlesNum = 2 
@@ -46,28 +43,14 @@ summaryLength = 30
         startLevel = 1
 
 [menu]
-    [[menu.main]]
-        identifier = "archguide"
-        name = "Arch guide"
-        url = "/archguide"
-        weight = 99
     [[menu.icons]]
-        identifier = "gitlab"
-        name = "GitLab"
-        url = "https://gitlab.com/gabmus"
+        identifier = "linkedin"
+        name = "LinkedIn"
+        url = "https://www.linkedin.com/in/haroon-akram/"
         weight = 10
     [[menu.icons]]
-        identifier = "gnome"
-        name = "GNOME GitLab"
-        url = "https://gitlab.gnome.org/gabmus"
-        weight = 20
-    [[menu.icons]]
-        identifier = "youtube"
-        name = "YouTube"
-        url = "https://youtube.com/TechPillsNet"
-        weight = 30
-    [[menu.icons]]
-        identifier = "mastodon"
-        name = "Mastodon"
-        url = "https://fosstodon.org/@gabmus"
-        weight = 40
+        identifier = "tryhackme"
+        name = "TryHackMe"
+        url = "https://tryhackme.com/p/Mist97"
+        weight = 10
+
