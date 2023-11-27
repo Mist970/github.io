@@ -18,5 +18,14 @@
 I was previously using Hexo with a nice theme called cactus (properly altered to match my preference), but at some point I got tired of that as well.</description>
     </item>
     
+    <item>
+      <title>Markdown Manual</title>
+      <link>/posts/mdmanual/</link>
+      <pubDate>Mon, 24 Aug 2020 09:19:02 +0200</pubDate>
+      
+      <guid>/posts/mdmanual/</guid>
+      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
+    </item>
+    
   </channel>
 </rss>

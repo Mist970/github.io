@@ -43,7 +43,7 @@
     
     
     <link type="text/css" rel="stylesheet" href=/css/styles.abbd6311bb4b6ca58f8e7398140529245ae0f6428b759fcd830742eee2619eabb900ba9914a9affb82aa9a16a9b9ea727bb315315a976a0db0e7513a5f12c504.css integrity="sha512-q71jEbtLbKWPjnOYFAUpJFrg9kKLdZ/NgwdC7uJhnqu5ALqZFKmv&#43;4Kqmhapuepye7MVMVqXag2w51E6XxLFBA==" />
-<meta name="author" content="Gabriele Musco" />
+<meta name="author" content="Haroon Akram" />
 
     
     
@@ -58,7 +58,7 @@ Anyway, let&amp;rsquo;s keep this quick and simple, my name is Gabriele Musco, a
     <meta property="og:type" content="article" />
     
     <meta
-        property="article:author" content="Gabriele Musco" />
+        property="article:author" content="Haroon Akram" />
     <meta
         property="article:published_time"
         content='2019-08-11T10:14:48Z&#43;0000' />
@@ -127,8 +127,6 @@ Anyway, let&amp;rsquo;s keep this quick and simple, my name is Gabriele Musco, a
                 About
             </a></li>
         
-        
-            <li><a href="/archguide">Arch guide</a></li>
         
         
             <li><a href="/tags">Tags</a></li>
@@ -232,50 +230,6 @@ Anyway, let&amp;rsquo;s keep this quick and simple, my name is Gabriele Musco, a
 </div>
 </article>
 
-
-    <a style="margin-bottom: 24px; display: inline-block;" class="shareBtn" onclick="openFediInstanceDialog();">
-        Share on the Fediverse
-    </a>
-    <div id="fediInstanceDialog">
-        <div class="bg" onclick="closeFediInstanceDialog();"></div>
-        <div class="dialog">
-            <h2>Enter your instance&#39;s address</h2>
-            <input id="fediInstanceInput" placeholder='Eg. mastodon.social' type="text" />
-            <div class="buttons">
-                <a class="shareBtn" onclick="closeFediInstanceDialog();">Cancel</a>
-                <a class="shareBtn" onclick="shareOnFedi();">Share</a>
-            </div>
-        </div>
-    </div>
-    <script>
-        var articleTitle = 'About';
-        var articleLink = '\/pages\/about\/';
-        var fediInstanceDialog = document.getElementById('fediInstanceDialog');
-        var fediInstanceInput = document.getElementById('fediInstanceInput');
-        function openFediInstanceDialog() {
-            fediInstanceDialog.classList.add('open');
-        }
-        function closeFediInstanceDialog() {
-            fediInstanceDialog.classList.remove('open');
-        }
-        function fixURL(url) {
-            if (url.substr(0, 8) == 'https://') return url;
-            if (url.substr(0, 7) == 'http://') return url;
-            return 'https://' + url;
-        }
-        function shareOnFedi() {
-            let instance = fediInstanceInput.value.trim();
-            if (!instance) {
-                return;
-            }
-            instance = fixURL(instance);
-            window.open(
-                `${instance}/share?text=${articleTitle}%20${articleLink}`,
-                '__blank'
-            );
-            closeFediInstanceDialog();
-        }
-    </script>
 
 
 
