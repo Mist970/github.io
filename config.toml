@@ -20,6 +20,8 @@ summaryLength = 30
     svgicon = "/logo.svg"
     icon512 = "/android-chrome-512x512.png"
     
+
+
     showRss = false
     imageInArticlePreview = true
 
@@ -43,6 +45,11 @@ summaryLength = 30
         startLevel = 1
 
 [menu]
+    [[menu.main]]
+        identifier = "offsec"
+        name = "OffSec"
+        url = "/offsec"
+        weight = 99
     [[menu.icons]]
         identifier = "linkedin"
         name = "LinkedIn"
