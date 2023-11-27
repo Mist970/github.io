@@ -10,29 +10,6 @@
     
     
     <item>
-      <title>Back to Hugo and on static site generators and custom themes</title>
-      <link>/posts/back-to-hugo/</link>
-      <pubDate>Mon, 24 Aug 2020 09:19:02 +0200</pubDate>
-      
-      <guid>/posts/back-to-hugo/</guid>
-      <description><![CDATA[<p>As you can see, this website is kinda different. I remade it, just because why not.</p>
-<p>I was previously using Hexo with a nice theme called cactus (properly altered to match my preference), but at some point I got tired of that as well.</p>
-<p>I wanted to create something simple and straight forward. This is the kind of website without too many bells and whistles. Just a blog, period.</p>
-<p>The initial idea of static site generators kinda goes well with this concept, but I don&rsquo;t exactly know when or how things changed. Maybe people liked these tools so much they tried to make them more general purpose, or they just wanted to use them for different things. Doesn&rsquo;t matter, point is that these generators, once simple and easy ways to make a decent blog without the burden and subsequent psychological trauma of a LAMP stack, are now bloated and messy.</p>
-<p>Well, to be fair it&rsquo;s not really an issue with the generators themselves, but with the themes. It&rsquo;s the theme that has the responsibility for how the content is meant to be laid out, what is allowed and how you should do things. Honestly calling them themes is an understatement. If the generator is the skeleton, the <em>theme</em> is muscles, flesh and nervous system. The so called generator is useless without one.</p>
-<p>Making themes is one of those things that I don&rsquo;t like to do. I didn&rsquo;t like it when I was a kid playing around with Wordpress and Joomla, and I don&rsquo;t like it now. I&rsquo;d rather make a plain website instead. But that&rsquo;s not feasible for a blog because of pagination, tags, RSS feed and whatever else that doesn&rsquo;t come to mind right now.</p>
-<p>But at some point I just said, well F it, let&rsquo;s do it. It&rsquo;s a thing I&rsquo;ll do once and basically forget it, and the gain I get from it is a website I actually like and that I can easily customize and change around whenever I feel like it.</p>
-<p>I decided to use Hugo since it seems to be the most popular static site generator at this point in time. I&rsquo;m not new to it, and I somewhat knew my way around it (or so I thought) since I already modified another theme for <a href="https://techpills.technology">the latest iteration of the Tech Pills website</a>. After watching some YouTube tutorials and digging through <a href="https://gohugo.io/documentation/">the lackluster documentation</a> what came out was a new theme I decided to call <a href="https://gitlab.com/gabmus/hugo-ficurinia">Ficurinia</a>.</p>
-<p>The name choice was pretty easy. This theme is inspired by the theme I was using before with Hexo called cactus. This being sort of a grittier version of cactus (if not a more personal vision on the same idea) I decided to call it after the Sicilian word for Indian fig aka prickly pear, <em>Ficurinia</em>.</p>
-<p>I&rsquo;m happy to have made this theme. It&rsquo;s simple, no weird layouts or messy animations, no javascript, and it works on mobile without any modification or special rules. Heck it even looks pretty damn good in the links command line browser.</p>
-<p>So this is my new home now. Hope you like it.</p>
-]]></description>
-      
-    </item>
-    
-    
-    
-    <item>
       <title>Markdown Manual</title>
       <link>/posts/mdmanual/</link>
       <pubDate>Mon, 24 Aug 2020 09:19:02 +0200</pubDate>
