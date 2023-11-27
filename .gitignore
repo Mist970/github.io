@@ -7,3 +7,6 @@ node_modules/
 public/
 resources/
 .deploy*/
+
+# Local Netlify folder
+.netlify
