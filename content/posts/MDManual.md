@@ -1,7 +1,8 @@
 ---
 title: "Markdown Manual"
 date: 2020-08-24T09:19:02+02:00
-tags: ["hugo", "website", "blog"]
+tags: ["example_tag"]
+toc: true
 ---
 
 This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.

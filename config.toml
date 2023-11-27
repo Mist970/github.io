@@ -19,16 +19,18 @@ summaryLength = 30
     appletouch = "/apple-touch-icon.png"
     svgicon = "/logo.svg"
     icon512 = "/android-chrome-512x512.png"
-    
-
-
     showRss = false
     imageInArticlePreview = true
-
+    enableFeatured = true           # use feature: true in the header of each article
     enableShareOnFediverse = false
+    posts = "Offsec posts"          # shows both the posts and offsec articles on the home page
+    showPostsLink = true
+    extraContentDirs = ["offsec"]
+    showSinglePageAsHome = false
+    homeSinglePage = "/home/"
 
-    enableRelatedArticles = true
-    relatedArticlesNum = 2 
+    enableRelatedArticles = false
+    relatedArticlesNum = 0 
     forceRedirect = true
 
 [markup]
@@ -45,11 +47,6 @@ summaryLength = 30
         startLevel = 1
 
 [menu]
-    [[menu.main]]
-        identifier = "offsec"
-        name = "OffSec"
-        url = "/offsec"
-        weight = 99
     [[menu.icons]]
         identifier = "linkedin"
         name = "LinkedIn"
