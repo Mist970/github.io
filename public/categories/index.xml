@@ -2,10 +2,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Haroon&#39;s Den</title>
-    <link>/categories/</link>
+    <link>https://www.haroonakram.co.uk/categories/</link>
     <description>Recent content in Categories on Haroon&#39;s Den</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Gabriele Musco - [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).</copyright><atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Gabriele Musco - [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).</copyright><atom:link href="https://www.haroonakram.co.uk/categories/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
