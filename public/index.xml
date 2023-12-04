@@ -26,6 +26,20 @@
     
     
     <item>
+      <title>My Homelab</title>
+      <link>https://www.haroonakram.co.uk/projects/metasploitable2/</link>
+      <pubDate>Sun, 03 Dec 2023 09:19:02 +0200</pubDate>
+      
+      <guid>https://www.haroonakram.co.uk/projects/metasploitable2/</guid>
+      <description><![CDATA[<h1 id="topology">Topology</h1>
+<p>this is the topology.</p>
+]]></description>
+      
+    </item>
+    
+    
+    
+    <item>
       <title>Markdown Manual</title>
       <link>https://www.haroonakram.co.uk/posts/mdmanual/</link>
       <pubDate>Mon, 24 Aug 2020 09:19:02 +0200</pubDate>
