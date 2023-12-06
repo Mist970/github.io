@@ -1,8 +1,8 @@
 ---
 title: "My Homelab"
 date: 2023-12-03T09:19:02+02:00
-tags: ["Homelab"]
+tags: ["Homelab", "Projects"]
 toc: true
 ---
-# Topology
-this is the topology.
+# Topology:
+This is the topology.
