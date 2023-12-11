@@ -33,9 +33,9 @@
       <pubDate>Sun, 03 Dec 2023 09:19:02 +0200</pubDate>
       
       <guid>https://www.haroonakram.co.uk/projects/homelab/</guid>
-      <description><![CDATA[<h1 id="topology">Topology:</h1>
-<h2 id="networks--hosts">Networks &amp; Hosts:</h2>
-<p>This homelab is my attempt at simulating various parts of an organisation&rsquo;s network infrastructure. I have seperated the various areas into VLANs &amp; used PfSense to permit and deny certain areas from connecting to others too.</p>
+      <description><![CDATA[<h2 id="my-homelab-setup">My Homelab Setup:</h2>
+<p>The topology above is supposed to be my homelab, although my artistic efforts are questionable to say the least, I hope it gives you an idea as to what technologies I am going to deal with.</p>
+<p>This homelab is my attempt at various cyber operations. I have seperated the various areas into VLANs &amp; used PfSense to permit and deny certain areas from communicating to others.</p>
 <p>This is my current configuration:</p>
 <p>Corporate LAN (Critical servers):</p>
 <ul>
@@ -61,6 +61,8 @@
 <p>The main goal of this Homelab is to gain experience in many areas in cyber security like malware analysis, working with a SIEM, Pentesting &amp; general IT knowledge of AD to maintain good security practices.</p>
 <p>All my CTF challenges will be done within this homelab envrionemnt too.</p>
 ]]></description>
+      
+        <media:thumbnail url="https://www.haroonakram.co.uk/images/Homelab/HTopology.png" />
       
     </item>
     

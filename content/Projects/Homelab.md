@@ -2,12 +2,13 @@
 title: "My Homelab"
 date: 2023-12-03T09:19:02+02:00
 tags: ["Homelab", "Projects"]
-toc: true
+toc: false
+image: "/images/Homelab/HTopology.png"
 ---
-# Topology:
+## My Homelab Setup:
+The topology above is supposed to be my homelab, although my artistic efforts are questionable to say the least, I hope it gives you an idea as to what technologies I am going to deal with.
 
-## Networks & Hosts:
-This homelab is my attempt at simulating various parts of an organisation's network infrastructure. I have seperated the various areas into VLANs & used PfSense to permit and deny certain areas from connecting to others too. 
+This homelab is my attempt at various cyber operations. I have seperated the various areas into VLANs & used PfSense to permit and deny certain areas from communicating to others. 
 
 This is my current configuration:
 
