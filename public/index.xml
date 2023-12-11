@@ -18,7 +18,9 @@
       <description><![CDATA[<h1 id="metasploitable-2-ctf">Metasploitable 2 CTF</h1>
 <p>Although I have already went over this box in the past, I thought it&rsquo;d be a good start to my CTF series where I&rsquo;ll be doing my best to root a variety of CTFs.</p>
 <p>The main purpose of this series is to point out various aspects of systems one can leverage to gain further access into said systems. As well as this, i&rsquo;ll be detailing the purpose of the many hosted services we will see in upcoming CTFs &amp; ways to protect them from attacks too.</p>
+<p>I&rsquo;d like to mention that I am using my customised Blackarch distro for my pentesting.  I may also use Kali every now and then too in this series.</p>
 <p>I hope you enjoy!</p>
+<hr>
 ]]></description>
       
     </item>
@@ -32,7 +34,32 @@
       
       <guid>https://www.haroonakram.co.uk/projects/homelab/</guid>
       <description><![CDATA[<h1 id="topology">Topology:</h1>
-<p>This is the topology.</p>
+<h2 id="networks--hosts">Networks &amp; Hosts:</h2>
+<p>This homelab is my attempt at simulating various parts of an organisation&rsquo;s network infrastructure. I have seperated the various areas into VLANs &amp; used PfSense to permit and deny certain areas from connecting to others too.</p>
+<p>This is my current configuration:</p>
+<p>Corporate LAN (Critical servers):</p>
+<ul>
+<li>Active Directory 2019 Server + Windows Hosts</li>
+<li>Metasploitable 2 (Represents a vulnerable server in an org)</li>
+<li><em>Any other Vulenrable server would be added into this VLAN</em></li>
+<li>Other servers &amp; databases shall be added in the future</li>
+</ul>
+<p>Corporate WAN (Fake Internet):</p>
+<ul>
+<li>Blackarch/Kali Machine (Threat actor&rsquo;s presence within the &ldquo;Internet&rdquo; of an org)</li>
+</ul>
+<p>DFIR &amp; SIEM:</p>
+<ul>
+<li>Tsurugi</li>
+<li>Security Onion (Mainly Wazuh for SIEM as I&rsquo;m still getting used to SO)</li>
+</ul>
+<p>Malware Analysis:</p>
+<ul>
+<li>REMnux</li>
+<li>Flare OS</li>
+</ul>
+<p>The main goal of this Homelab is to gain experience in many areas in cyber security like malware analysis, working with a SIEM, Pentesting &amp; general IT knowledge of AD to maintain good security practices.</p>
+<p>All my CTF challenges will be done within this homelab envrionemnt too.</p>
 ]]></description>
       
     </item>

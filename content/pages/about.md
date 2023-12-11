@@ -10,10 +10,12 @@ My name is Haroon Akram, I am recent graduate in the field of **Cyber Security**
 I am looking for an opportunity to showcase my knowledge in a practical environment & contribute towards the industry.
 
 I have knowledge pertaining to the following certificates:
-- A+ (Core 1 & Core 2)
+- A+ 
 - Network +
 - Security +
-- CCNA (Currently reviewing my CCNA knowledge as of now)
+- CCNA 
+
+However, I will be presenting my practical experience/knowledge in this website! 
 
 I'll be using this blog to discuss whatever I find interesting (Mostly Tech, Cyber-related stuff & whatever else).
 
