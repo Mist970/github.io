@@ -10,7 +10,7 @@ The topology above is supposed to be my homelab, although my artistic efforts ar
 
 This homelab is my attempt at various cyber operations. I have seperated the various areas into VLANs & used PfSense to permit and deny certain areas from communicating to others. 
 
-This is my current configuration:
+*My current Cyber Security Homelab configuration:*
 
 Corporate LAN (Critical servers):
 * Active Directory 2019 Server + Windows Hosts
