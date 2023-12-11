@@ -36,7 +36,7 @@
       <description><![CDATA[<h2 id="my-homelab-setup">My Homelab Setup:</h2>
 <p>The topology above is supposed to be my homelab, although my artistic efforts are questionable to say the least, I hope it gives you an idea as to what technologies I am going to deal with.</p>
 <p>This homelab is my attempt at various cyber operations. I have seperated the various areas into VLANs &amp; used PfSense to permit and deny certain areas from communicating to others.</p>
-<p>This is my current configuration:</p>
+<p><em>My current Cyber Security Homelab configuration:</em></p>
 <p>Corporate LAN (Critical servers):</p>
 <ul>
 <li>Active Directory 2019 Server + Windows Hosts</li>
