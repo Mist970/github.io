@@ -23,9 +23,9 @@ summaryLength = 30
     imageInArticlePreview = true
     enableFeatured = true           # use feature: true in the header of each article
     enableShareOnFediverse = false
-    posts = "Offsec posts"          # shows both the posts and offsec articles on the home page
+    posts = "CTFs posts"          # shows both the posts and CTF articles on the home page
     showPostsLink = true
-    extraContentDirs = ["offsec", "projects"]
+    extraContentDirs = ["CTFs", "projects"]
     showSinglePageAsHome = false
     homeSinglePage = "/home/"
 

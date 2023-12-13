@@ -62,14 +62,5 @@
       <description></description>
     </item>
     
-    <item>
-      <title>example_tag</title>
-      <link>https://www.haroonakram.co.uk/tags/example_tag/</link>
-      <pubDate>Mon, 24 Aug 2020 09:19:02 +0200</pubDate>
-      
-      <guid>https://www.haroonakram.co.uk/tags/example_tag/</guid>
-      <description></description>
-    </item>
-    
   </channel>
 </rss>

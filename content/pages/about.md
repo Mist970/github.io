@@ -15,7 +15,7 @@ I have knowledge pertaining to the following certificates:
 - Security+
 - CCNA 
 
-However, I will be presenting my practical experience/knowledge in this website! 
+However, I will be presenting my practical experience/knowledge on this website! 
 
 I'll be using this blog to discuss whatever I find interesting (Mostly Tech, Cyber-related stuff & whatever else).
 
