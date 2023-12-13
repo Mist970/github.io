@@ -5,7 +5,7 @@ title = "Haroon's Den"
 theme = "hugo-ficurinia"
 
 author = "Haroon Akram"
-copyright = "Gabriele Musco - [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/)."
+copyright = "Haroon Akram - [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/)."
 
 paginate = 5
 summaryLength = 30
