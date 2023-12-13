@@ -4,7 +4,7 @@ title = "Haroon's Den"
 
 theme = "hugo-ficurinia"
 
-author = "Gabriele Musco"
+author = "Haroon Akram"
 copyright = "Gabriele Musco - [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/)."
 
 paginate = 5
@@ -23,11 +23,14 @@ summaryLength = 30
     imageInArticlePreview = true
     enableFeatured = true           # use feature: true in the header of each article
     enableShareOnFediverse = false
-    posts = "CTFs posts"          # shows both the posts and CTF articles on the home page
-    showPostsLink = true
-    extraContentDirs = ["CTFs", "projects"]
+    posts = "Offsec posts"          # shows both the posts and offsec articles on the home page
+    showPostsLink = false
+    extraContentDirs = ["offsec", "projects"]
     showSinglePageAsHome = false
     homeSinglePage = "/home/"
+
+    mobileHamburgerNav = true     # alternative hamburger menu layout for the main nav menu when screen is small
+
 
     enableRelatedArticles = false
     relatedArticlesNum = 0 
