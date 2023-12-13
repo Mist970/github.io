@@ -6,7 +6,7 @@ toc: false
 image: "/images/Homelab/HTopology.png"
 ---
 ## My Homelab Setup:
-The topology above is supposed to be my homelab, although my artistic efforts are questionable to say the least, I hope it gives you an idea as to what technologies I am going to deal with.
+The topology above is supposed to be my homelab, although my artistic efforts are questionable to say the least, I hope it gives you an idea as to what technologies I'll be dealing with.
 
 This homelab is my attempt at various cyber operations. I have seperated the various areas into VLANs & used PfSense to permit and deny certain areas from communicating to others. 
 
