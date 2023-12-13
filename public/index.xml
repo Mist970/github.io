@@ -34,13 +34,13 @@
       <guid>https://www.haroonakram.co.uk/projects/homelab/</guid>
       <description><![CDATA[<h2 id="my-homelab-setup">My Homelab Setup:</h2>
 <p>The topology above is supposed to be my homelab, although my artistic efforts are questionable to say the least, I hope it gives you an idea as to what technologies I&rsquo;ll be dealing with.</p>
-<p>This homelab is my attempt at various cyber operations. I have seperated the various areas into VLANs &amp; used PfSense to permit and deny certain areas from communicating to others.</p>
+<p>This homelab is my attempt at various cyber operations. I have separated the various areas into VLANs &amp; used PfSense to permit and deny certain areas from communicating to others.</p>
 <p><em>My current Cyber Security Homelab configuration:</em></p>
 <p>Corporate LAN (Critical servers):</p>
 <ul>
 <li>Active Directory 2019 Server + Windows Hosts</li>
 <li>Metasploitable 2 (Represents a vulnerable server in an org)</li>
-<li><em>Any other Vulenrable server would be added into this VLAN</em></li>
+<li><em>Any other Vulnerable server would be added into this VLAN</em></li>
 <li>Other servers &amp; databases shall be added in the future</li>
 </ul>
 <p>Corporate WAN (Fake Internet):</p>
@@ -58,7 +58,7 @@
 <li>Flare OS</li>
 </ul>
 <p>The main goal of this Homelab is to gain experience in many areas in cyber security like malware analysis, working with a SIEM, Pentesting &amp; general IT knowledge of AD to maintain good security practices.</p>
-<p>All my CTF challenges will be done within this homelab envrionemnt too.</p>
+<p>All my CTF challenges will be done within this homelab environment too.</p>
 ]]></description>
       
         <media:thumbnail url="https://www.haroonakram.co.uk/images/Homelab/HTopology.png" />

@@ -11,8 +11,8 @@ I am looking for an opportunity to showcase my knowledge in a practical environm
 
 I have knowledge pertaining to the following certificates:
 - A+ 
-- Network +
-- Security +
+- Network+
+- Security+
 - CCNA 
 
 However, I will be presenting my practical experience/knowledge in this website! 
