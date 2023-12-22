@@ -8,14 +8,14 @@ image: "/images/Homelab/HTopology.png"
 ## My Homelab Setup:
 The topology above is supposed to be my homelab, although my artistic efforts are questionable to say the least, I hope it gives you an idea as to what technologies I'll be dealing with.
 
-This homelab is my attempt at various cyber operations. I have separated the various areas into VLANs & used PfSense to permit and deny certain areas from communicating to others. 
+This homelab is my attempt at various cyber operations like Offensive Security & DFIR.
 
-*My current Cyber Security Homelab configuration:*
+_My current Cyber Security Homelab configuration:_
 
 Corporate LAN (Critical servers):
 * Active Directory 2019 Server + Windows Hosts
 * Metasploitable 2 (Represents a vulnerable server in an org)
-* *Any other Vulnerable server would be added into this VLAN*
+* _Any other Vulnerable server would be added into this VLAN_
 * Other servers & databases shall be added in the future
 
 Corporate WAN (Fake Internet):
