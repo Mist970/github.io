@@ -53,7 +53,7 @@
       
       <guid>https://www.haroonakram.co.uk/projects/homelab/</guid>
       <description><![CDATA[<h2 id="my-homelab-setup">My Homelab Setup:</h2>
-<p>The topology above is supposed to be my homelab, although my artistic efforts are questionable to say the least, I hope it gives you an idea as to what technologies I&rsquo;ll be dealing with.</p>
+<p>The topology above is supposed to be my homelab, although my artistic efforts are questionable to say the least, I hope it gives you an idea as to what technologies I&rsquo;ll be dealing with. Credit goes to <a href="https://www.linkedin.com/in/markoandrejic93/overlay/about-this-profile/">Marko Andrejić</a> , from whom I drew inspiration to build this lab.</p>
 <p>This homelab is my attempt at various cyber operations like Offensive Security &amp; DFIR.</p>
 <p><em>My current Cyber Security Homelab configuration:</em></p>
 <p>Corporate LAN (Critical servers):</p>
