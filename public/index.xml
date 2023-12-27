@@ -15,7 +15,7 @@
       <pubDate>Sun, 03 Dec 2023 09:19:02 +0200</pubDate>
       
       <guid>https://www.haroonakram.co.uk/offsec/metasploitable2/</guid>
-      <description><![CDATA[<p>Although I have already went over this box in the past, I thought it&rsquo;d be a good start to my CTF series where I&rsquo;ll be doing my best to root a variety of CTFs.</p>
+      <description><![CDATA[<p>Although I have already went over this box in the past &amp; it is pretty old too, I thought it&rsquo;d be a good start to my CTF series where I&rsquo;ll be doing my best to root a variety of CTFs.</p>
 <p>The main purpose of this series is to point out various aspects of systems one can leverage to gain further access into said systems. As well as this, i&rsquo;ll be detailing the purpose of the many hosted services we will see in upcoming CTFs &amp; ways to protect them from attacks too.</p>
 <p>I hope you enjoy!</p>
 <hr>
@@ -29,8 +29,8 @@
 </thead>
 <tbody>
 <tr>
-<td>Blackarch</td>
-<td>192.168.10.41</td>
+<td>Kali</td>
+<td>192.168.10.40</td>
 </tr>
 <tr>
 <td>Metasploitable 2 Server</td>
@@ -38,6 +38,49 @@
 </tr>
 </tbody>
 </table>
+<h2 id="reconnaissance">Reconnaissance</h2>
+<p>After performing a SYN &amp; Version Scan using Nmap, you can see the server&rsquo;s various services listed below as well as their associated ports.</p>
+<p><img src="/images/Metasploitable_2/nmapscan.jpg" alt="nmapscan.jpg"></p>
+<blockquote>
+<p>Now theres a lot to unpack here. So lets start off by simply going through what services are open and what they are vulnerable to.</p>
+</blockquote>
+<blockquote>
+<p>The Metasploit Framework is a popular tool used in penetration tests to assess the security posture of systems &amp; leverage security vulnerabilities through exploitation.</p>
+</blockquote>
+<h2 id="exploitation-ftp">Exploitation: FTP</h2>
+<p>We will be using the msfconsole to tackle our first vulnerable service, FTP. The ftp server which is served by &ldquo;vsftpd V2.3.4&rdquo;. This specific version of vsftpd has a vulnerability present in the software.</p>
+<p>First off, we will use msf to search for the vulnerability itself. Typing the keyword &ldquo;vsftpd&rdquo; does the trick. You can see in the description of the exploit that is produces a backdoor to the system.</p>
+<p>The <strong>use</strong> command will allow us to select the Module/exploit.</p>
+<p><img src="/images/Metasploitable_2/msf_vsftpd.jpg" alt="msf_vsftpd.jpg">
+<strong>Show Options</strong> is used to inspect the possible configurations that can be done within this script.</p>
+<p>We will need to configure this by setting the <strong>&ldquo;RHOSTS&rdquo;</strong> option to the target IP address, in this case, the Metasploitable 2 machine.</p>
+<p><img src="/images/Metasploitable_2/msf_vsftpd_show_options.jpg" alt="msf_vsftpd_show_options.jpg"></p>
+<p>Using the <strong>exploit</strong> command, we will now execute the actual payload. Doing this gives us root access to the Metasploitable 2 machine.<br>
+<img src="/images/Metasploitable_2/msf_vsftpd_exploit.jpg" alt="msf_vsftpd_exploit.jpg"><br>
+Once your in the system as root, you can access sensitive files like the <strong>Shadow</strong> file containing the password hashes for all users on the system. This can assist you in laterally moving across users and possibly other systems too.</p>
+<p>Now this is just one area of this machine we have exploited, however, there&rsquo;s a lot more to uncover.</p>
+<p>But Before we do that, I will attempt to shed some light on the blue team perspective of this attack via the Security Onion SIEM.</p>
+<h3 id="ftp-attack-analysis-siem">FTP Attack Analysis (SIEM)</h3>
+<p>So far, we have issued an Nmap scan to see the running services as well as their versions on the vulnerable machine. We have also gained access to the root account by leveraging a vulnerable FTP service.</p>
+<p>Now we shall see all of this within the SIEM. (I will try my best to describe what had happened as I am still getting used to Security Onion as of now)</p>
+<p>You can see a lot of alerts. These alerts are around the time frame of our attack.</p>
+<p>The first few alerts are in regards to our Nmap scan. The alert named &ldquo;GPL DNS named version attempt&rdquo; shows that the Nmap scan was trying to get information on the version of running services.</p>
+<p><img src="/images/Metasploitable_2/msf_vsftpd_SIEM1.jpg" alt="msf_vsftpd_SIEM_Pic_1.jpg"></p>
+<p>The alert I want to dive into is &ldquo;GPL ATTACK_RESPONSE id check returned root&rdquo;. This alert was triggered when we exploited the FTP server and gained root access to the system.</p>
+<p><img src="/images/Metasploitable_2/msf_vsftpd_SIEM2.jpg" alt="msf_vsftpd_SIEM_Pic_2.jpg"></p>
+<p>In the image above, when inspecting this alert further, we see our user input when we gained full access to the system. However, the alert was triggered due to the <strong>id</strong> command which gave us the following information:</p>
+<p>uid=0(root) gid=0(root)</p>
+<p>Hence triggering the alert.</p>
+<h2 id="exploitation-distcc">Exploitation: Distcc</h2>
+<p><strong>CVE-2004-2687</strong> is a vulnerability that allows one to perform remote code execution on servers that have the &ldquo;Distributed C Compiler&rdquo; deamon running on them.</p>
+<h3 id="what-is-distcc">What is Distcc?</h3>
+<pre><code>Distcc stands for &quot;Distributed C Compiler&quot;. It allows programmers to compile code using not only the local machine but also all 
+available servers too. 
+
+These servers would utilize their unused processing power to help compile to the code too.
+The compilation takes place through the user's remote commands to the servers. 
+Typically, the user would send the source code and the compilation commands to all the available serves to help compile the code
+</code></pre>
 ]]></description>
       
         <media:thumbnail url="https://www.haroonakram.co.uk/images/Metasploitable_2/msf.png" />
@@ -56,23 +99,23 @@
 <p>The topology above is supposed to be my homelab, although my artistic efforts are questionable to say the least, I hope it gives you an idea as to what technologies I&rsquo;ll be dealing with. Credit goes to <a href="https://www.linkedin.com/in/markoandrejic93/overlay/about-this-profile/">Marko Andrejić</a> , from whom I drew inspiration to build this lab.</p>
 <p>This homelab is my attempt at various cyber operations like Offensive Security &amp; DFIR.</p>
 <p><em>My current Cyber Security Homelab configuration:</em></p>
-<p>Corporate LAN (Critical servers):</p>
+<p><strong>Corporate LAN (Critical servers):</strong></p>
 <ul>
 <li>Active Directory 2019 Server + Windows Hosts</li>
 <li>Metasploitable 2 (Represents a vulnerable server in an org)</li>
 <li><em>Any other Vulnerable server would be added into this VLAN</em></li>
 <li>Other servers &amp; databases shall be added in the future</li>
 </ul>
-<p>Corporate WAN (Fake Internet):</p>
+<p><strong>Corporate WAN (Fake Internet):</strong></p>
 <ul>
-<li>Blackarch/Kali Machine (Threat actor&rsquo;s presence within the &ldquo;Internet&rdquo; of an org)</li>
+<li>Blackarch/Kali Machine (Threat actor&rsquo;s presence within the &ldquo;Intranet&rdquo; of an org)</li>
 </ul>
-<p>DFIR &amp; SIEM:</p>
+<p><strong>DFIR &amp; SIEM:</strong></p>
 <ul>
 <li>Tsurugi</li>
-<li>Security Onion (Mainly Wazuh for SIEM as I&rsquo;m still getting used to SO)</li>
+<li>Security Onion (Mainly Sucirata &amp; Wazuh for SIEM as I&rsquo;m still getting used to SO)</li>
 </ul>
-<p>Malware Analysis:</p>
+<p><strong>Malware Analysis:</strong></p>
 <ul>
 <li>REMnux</li>
 <li>Flare OS</li>

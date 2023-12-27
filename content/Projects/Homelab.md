@@ -14,20 +14,20 @@ This homelab is my attempt at various cyber operations like Offensive Security &
 
 _My current Cyber Security Homelab configuration:_
 
-Corporate LAN (Critical servers):
+**Corporate LAN (Critical servers):**
 * Active Directory 2019 Server + Windows Hosts
 * Metasploitable 2 (Represents a vulnerable server in an org)
 * _Any other Vulnerable server would be added into this VLAN_
 * Other servers & databases shall be added in the future
 
-Corporate WAN (Fake Internet):
-* Blackarch/Kali Machine (Threat actor's presence within the "Internet" of an org)
+**Corporate WAN (Fake Internet):**
+* Blackarch/Kali Machine (Threat actor's presence within the "Intranet" of an org)
 
-DFIR & SIEM:
+**DFIR & SIEM:**
 * Tsurugi
-* Security Onion (Mainly Wazuh for SIEM as I'm still getting used to SO)
+* Security Onion (Mainly Sucirata & Wazuh for SIEM as I'm still getting used to SO)
 
-Malware Analysis:
+**Malware Analysis:**
 * REMnux
 * Flare OS
 
