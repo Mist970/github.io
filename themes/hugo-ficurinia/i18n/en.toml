@@ -5,7 +5,7 @@ other = "This is not the page you were looking for"
 other = "Search"
 
 [tags]
-other = "Tags"
+other = "All Topics"
 
 [date]
 other = "Date"
@@ -47,10 +47,10 @@ other = "Posts"
 other = "Search"
 
 [tagsColumn]
-other = "Tags:"
+other = "Topics:"
 
 [tagColumn]
-other = "Tag:"
+other = "Topic:"
 
 [morePostsLikeThis]
 other = "More posts like this"

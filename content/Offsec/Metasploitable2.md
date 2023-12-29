@@ -1,7 +1,7 @@
 ---
 title: "CTF 1: Metasploitable 2"
 date: 2023-12-03T09:19:02+02:00
-tags: ["Offsec", "Ethical_Hacking", "CTFs"]
+tags: ["Offsec", "CTFs"]
 toc: true
 image: "/images/Metasploitable_2/msf.png"
 ---

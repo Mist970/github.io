@@ -25,6 +25,7 @@ summaryLength = 30
     enableShareOnFediverse = false
     posts = "Offsec posts"          # shows both the posts and offsec articles on the home page
     showPostsLink = false
+    showTags = true
     extraContentDirs = ["offsec", "projects"]
     showSinglePageAsHome = false
     homeSinglePage = "/home/"

@@ -19,7 +19,6 @@ However, I'll be presenting my practical experience/knowledge closely related to
 
 I'll be using this blog to discuss whatever I find interesting (Mostly Tech, Cyber-related stuff & whatever else).
 
-Oh...and I like practicing Calisthenics too :)
 # Contacts
 You can find me on LinkedIn (for now). I'm always up for a good chat about anything! :)
 - [LinkedIn](https://www.linkedin.com/in/haroon-akram/)
