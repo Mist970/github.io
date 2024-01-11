@@ -48,8 +48,8 @@
 <p>The Metasploit Framework is a popular tool used in penetration tests to assess the security posture of systems &amp; leverage security vulnerabilities through exploitation.</p>
 </blockquote>
 <h2 id="exploitation-ftp">Exploitation: FTP</h2>
-<p>We will be using the msfconsole to tackle our first vulnerable service, FTP. The ftp server which is served by &ldquo;vsftpd V2.3.4&rdquo;. This specific version of vsftpd has a vulnerability present in the software.</p>
-<p>First off, we will use msf to search for the vulnerability itself. Typing the keyword &ldquo;vsftpd&rdquo; does the trick. You can see in the description of the exploit that is produces a backdoor to the system.</p>
+<p>We will be using the msfconsole to tackle our first vulnerable service, FTP. The ftp server is served by  <strong>vsftpd</strong>, specifically version V2.3.4. This version of vsftpd has a vulnerability present in the software.</p>
+<p>First off, we will use msf to search for the vulnerability itself. Typing the keyword &ldquo;vsftpd&rdquo; does the trick. You can see in the description of the exploit that it produces a backdoor to the system.</p>
 <p>The <strong>use</strong> command will allow us to select the Module/exploit.</p>
 <p><img src="/images/Metasploitable_2/msf_vsftpd.jpg" alt="msf_vsftpd.jpg">
 <strong>Show Options</strong> is used to inspect the possible configurations that can be done within this script.</p>
