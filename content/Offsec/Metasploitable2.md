@@ -30,9 +30,9 @@ After performing a SYN & Version Scan using Nmap, you can see the server's vario
 > The Metasploit Framework is a popular tool used in penetration tests to assess the security posture of systems & leverage security vulnerabilities through exploitation.
 
 ## Exploitation: FTP
-We will be using the msfconsole to tackle our first vulnerable service, FTP. The ftp server which is served by "vsftpd V2.3.4". This specific version of vsftpd has a vulnerability present in the software. 
+We will be using the msfconsole to tackle our first vulnerable service, FTP. The ftp server is served by  **vsftpd**, specifically version V2.3.4. This version of vsftpd has a vulnerability present in the software. 
 
-First off, we will use msf to search for the vulnerability itself. Typing the keyword "vsftpd" does the trick. You can see in the description of the exploit that is produces a backdoor to the system.
+First off, we will use msf to search for the vulnerability itself. Typing the keyword "vsftpd" does the trick. You can see in the description of the exploit that it produces a backdoor to the system.
 
 The **use** command will allow us to select the Module/exploit.
 
